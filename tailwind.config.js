@@ -27,7 +27,9 @@ module.exports = {
         center: true
       },
       backgroundImage: theme => ({
-        'hero-pattern' : "url('/covid_splash.jpg')"
+        'covid_splash_md' : "url('/covid_splash/covid_splash_kex5ce_c_scale,w_1400.png')",
+        'covid_splash_sm' : "url('/covid_splash/covid_splash_kex5ce_c_scale,w_852.png')",
+        'covid_splash' : "url('/covid_splash/covid_splash_kex5ce_c_scale,w_638.png')"
       })
 
     }

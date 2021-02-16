@@ -27,8 +27,8 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className=" flex flex-col bg-no-repeat bg-cover bg-center px-10 mb-28 pt-2 pb-20 w-screen"
-        style={{ backgroundImage: 'linear-gradient(180deg, rgba(9,36,93,0.25) 0%, #FFFFFF 100%), url(/covid_splash.jpg)' }}>
+      <section className=" flex flex-col bg-no-repeat bg-covid_splash sm:bg-covid_splash_sm md:bg-covid_splash_md bg-cover bg-center px-10 mb-28 pt-2 pb-20 w-screen"
+        >
         
         <div className="z-10">
 
