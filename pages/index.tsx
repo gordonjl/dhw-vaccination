@@ -4,7 +4,7 @@ import { FooterMenu } from '../components/FooterMenu'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookSquare, faInstagramSquare, faLinkedinIn, faTwitterSquare, faYoutubeSquare } from '@fortawesome/free-brands-svg-icons'
 import { FaqItem } from '../components/FaqItem'
-
+import { DhwCard } from '../components/DhwCard'
 
 export default function Home() {
 
@@ -27,13 +27,16 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className=" flex flex-col bg-no-repeat bg-cover bg-center px-10 mb-28 pt-2 pb-20 w-screen" 
-      style={{ backgroundImage: 'linear-gradient(180deg, rgba(9,36,93,0.25) 0%, #FFFFFF 100%), url(/covid_splash.jpg)' }}>
+      <section className=" flex flex-col bg-no-repeat bg-cover bg-center px-10 mb-28 pt-2 pb-20 w-screen"
+        style={{ backgroundImage: 'linear-gradient(180deg, rgba(9,36,93,0.25) 0%, #FFFFFF 100%), url(/covid_splash.jpg)' }}>
+        
+        <div className="z-10">
 
         <img src="/idhw-logo.png" className="w-44 mb-40" />
         <h2 className="text-5xl font-bold w-2/3 pb-6">Idaho's COVID-19 Vaccine Registration</h2>
         <div className="text-2xl w-4/5">
           COVID-19 vaccination is one of the most improtant tools to end the pandemic. Use our tool to sign up and be contracted by a provider when a vaccine is available for you.
+        </div>
         </div>
       </section>
 
@@ -42,39 +45,19 @@ export default function Home() {
 
 
 
-        <div className="flex flex-col space-y-5 md:space-y-0 md:space-x-0 md:flex-row md:space-x-5">
-          <div className=" rounded shadow-md overflow-hidden">
-            <img src="/nathan-anderson-GM5Yn5XRVqA-unsplash.jpg" className="w-full h-44 object-cover" />
-            <div className="h-3"
-              style={{ background: 'linear-gradient(90deg, #37558A 0%, #007864 100%' }}
-            >&nbsp;</div>
-            <div className="h4 text-center pt-4 text-xl text-gray-600" >
-              For Individuals
-            </div>
-            <div className="text-center pt-3">
-              If your an individual looking for a vaccine, use our quick registration form to add your name to the list.
-            </div>
-            <div className="flex justify-center my-5">
-
-              <div className="bg-secondary w-32  text-white font-bold rounded-full text-center p-2 text-lg">Register</div>
-            </div>
-          </div>
-          <div className="   rounded shadow-md overflow-hidden">
-            <img src="/ani-kolleshi-7jjnJ-QA9fY-unsplash.jpg" className="w-full h-44 object-cover" />
-            <div className="h-3"
-              style={{ background: 'linear-gradient(270deg, #4E008E 0%, #37558A 100%' }}
-            >&nbsp;</div>
-            <div className="h4 text-center pt-4 text-xl text-gray-600" >
-              For Providers
-            </div>
-            <div className="text-center p-3">
-              Providers can log in to access a list of registrants to initiate contact relating to vaccination.
-            </div>
-            <div className="flex justify-center my-5">
-
-              <div className="bg-tertiary w-32  text-white font-bold rounded-full text-center p-2 text-lg">Register</div>
-            </div>
-          </div>
+        <div className="flex flex-col space-y-5 sm:space-y-0 sm:space-x-0 sm:flex-row sm:space-x-5 flex-auto ">
+          <DhwCard
+            imageUrl="/nathan-anderson-GM5Yn5XRVqA-unsplash.jpg"
+            alt="Family Image"
+            ctaText="Sign Up"
+            highlightColor="secondary"
+          />
+          <DhwCard
+            imageUrl="/ani-kolleshi-7jjnJ-QA9fY-unsplash.jpg"
+            alt="doctor wearing facemask"
+            ctaText="Register"
+            highlightColor="tertiary"
+          />
         </div>
         <section className="my-36">
           <h2 className="text-3xl font-bold">FAQs</h2>
